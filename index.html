@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Checker</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>URL Checker</h1>
+      <p>Enter an HTTP or HTTPS URL to check whether it exists and whether it is a file or folder.</p>
+      <label for="url">URL</label>
+      <input id="url" type="text" autocomplete="off" spellcheck="false" placeholder="https://example.com/docs/readme.pdf" aria-describedby="result" />
+      <div id="result" role="status" aria-live="polite">Start typing a URL.</div>
+      <p class="hint">Try: https://example.com/docs/, https://example.com/docs/readme.pdf, or https://example.com/missing</p>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
